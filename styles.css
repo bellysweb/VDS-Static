@@ -273,6 +273,11 @@ img { max-width: 100%; display: block; }
   font-weight: 600; text-align: center;
 }
 
+.contact-center { display: flex; justify-content: center; }
+.contact-info { text-align: center; max-width: 480px; }
+.contact-info h3 { font-size: 1.5rem; }
+.contact-info > p { margin: 0 auto 24px; }
+.contact-item { margin-bottom: 12px; }
 @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; gap: 40px; } }
 
 /* =====================
