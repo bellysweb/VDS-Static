@@ -41,23 +41,6 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 });
 
 // =====================
-// CONTACT FORM
-// =====================
-const form = document.getElementById('contactForm');
-const successMsg = document.getElementById('formSuccess');
-if (form) {
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    // In a real deployment, hook this up to Formspree, Netlify Forms, or your backend
-    // For now, just show success
-    successMsg.hidden = false;
-    form.reset();
-    // Hide after 5s
-    setTimeout(() => { successMsg.hidden = true; }, 5000);
-  });
-}
-
-// =====================
 // SCROLL ANIMATIONS (simple fade-in)
 // =====================
 const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -40px 0px' };
